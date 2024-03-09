@@ -1,0 +1,54 @@
+:root{
+    --letraStarWars: "Anta", sans-serif;
+    --colorFondoHeader: #000000;
+    --amarilloLogo: #daa810;
+    --blanco: #ffffff;
+}
+img{
+    height: 7vh;
+    width: auto;
+}
+
+header{
+    background-color: var(--colorFondoHeader);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--letraStarWars);
+    padding: 20px 30px;
+    display: block;
+    font-size: 3vh;
+    color: var(--blanco);
+    transition-duration: .5s;
+}
+
+a:hover{
+    color: var(--amarilloLogo);
+}
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        display: block;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav__enlace:hover{
+
+        background-color: var(--amarilloLogo);
+        color: var(--colorFondoHeader);
+    }
+}
